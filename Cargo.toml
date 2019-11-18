@@ -1,0 +1,47 @@
+[package]
+name = "bug-report"
+version = "0.1.0"
+authors = [
+	"",
+]
+edition = "2018"
+publish = false
+
+
+# [lib]
+# name = "something"
+# crate-type = ["staticlib"]
+# path = "src/main.rs"
+
+
+
+
+
+[dependencies.sdl2]
+git = "https://github.com/Rust-SDL2/rust-sdl2.git"
+
+default-features = false
+
+[dependencies.wgpu]
+git = "https://github.com/gfx-rs/wgpu-rs.git"
+
+
+
+[dependencies]
+
+shaderc = "0.6.1"
+
+#Fork for iOS 
+# shaderc = { path = "../shaderc-rs/shaderc-rs"}
+
+#Math Lib for 2d transforms. 
+euclid = "0.20.4"
+#Translates Spirv to platform shader
+spirv_cross = {version = "0.16.0", features = ["glsl"] }
+
+glsl = "3.0.0"
+image = "*"
+rand = "*"
+# glm = {package = "nalgebra-glm", version = "0.3" }
+env_logger = "0.5"
+log = "0.4"
